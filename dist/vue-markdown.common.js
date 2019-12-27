@@ -127,7 +127,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = {
 	  md: new _markdownIt2.default(),
 
-	  template: '<div><slot></slot></div>',
+	  template: '<span><slot></slot></span>',
 
 	  data: function data() {
 	    return {
