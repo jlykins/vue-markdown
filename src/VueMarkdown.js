@@ -206,6 +206,7 @@ export default {
       this.md.renderInline(
         this.prerender(this.sourceData)
       ) : ''
+    console.log('this code is running');
     outHtml = this.postrender(outHtml);
 
     this.$emit('rendered', outHtml)
