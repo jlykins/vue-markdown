@@ -318,7 +318,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      });
 	    }
 
-	    var outHtml = this.show ? this.md.render(this.prerender(this.sourceData)) : '';
+	    var outHtml = this.show ? this.md.renderInline(this.prerender(this.sourceData)) : '';
 	    outHtml = this.postrender(outHtml);
 
 	    this.$emit('rendered', outHtml);
