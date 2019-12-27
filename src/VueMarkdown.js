@@ -203,7 +203,7 @@ export default {
     }
 
     let outHtml = this.show ?
-      this.md.render(
+      this.md.renderInline(
         this.prerender(this.sourceData)
       ) : ''
     outHtml = this.postrender(outHtml);
