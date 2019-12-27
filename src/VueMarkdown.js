@@ -14,7 +14,7 @@ import tasklists from 'markdown-it-task-lists'
 export default {
   md: new markdownIt(),
 
-  template: '<div><slot></slot></div>',
+  template: '<span><slot></slot></span>',
 
   data() {
     return {
