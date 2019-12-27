@@ -339,7 +339,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      });
 	    }
 
-	    var outHtml = this.show ? this.md.render(this.prerender(this.sourceData)) : '';
+	    var outHtml = this.show ? this.md.renderInline(this.prerender(this.sourceData)) : '';
 	    outHtml = this.postrender(outHtml);
 
 	    this.$emit('rendered', outHtml);
@@ -1420,7 +1420,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * ##### presetName
 	 *
 	 * MarkdownIt provides named presets as a convenience to quickly
-	 * enable/disable active syntax rules and options for common use cases.
+    	 * enable/disable active syntax rules and options for common use cases.
 	 *
 	 * - ["commonmark"](https://github.com/markdown-it/markdown-it/blob/master/lib/presets/commonmark.js) -
 	 *   configures parser to strict [CommonMark](http://commonmark.org/) mode.
